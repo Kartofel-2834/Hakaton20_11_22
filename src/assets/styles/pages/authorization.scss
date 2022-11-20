@@ -1,0 +1,44 @@
+.auth-modal-body {
+  justify-content: space-around;
+
+  .form-pane-inner {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+  }
+
+  .form-input {
+    margin-top: 0.75em;
+
+    input {
+      margin-top: 0.5em;
+    }
+  }
+
+  button {
+    width: 100%;
+    margin: 1em auto 0 auto;
+  }
+
+  .reg-link {
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0.5em;
+    transition: 0.15s linear;
+
+    &:hover {
+      color: var(--main);
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .auth-modal-body {
+    padding: 1em 2em !important;
+
+    button {
+      width: 50%;
+    }
+  }
+}

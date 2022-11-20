@@ -1,0 +1,28 @@
+.image-card {
+  width: calc(100% - 1em);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  padding: 0.5em;
+  cursor: pointer;
+
+  // color: #ffffffd4;
+  color: var(--fourth);
+  border: 3px solid var(--main);
+  border-radius: 6px;
+  transition: 0.15s linear;
+
+  .image-inner {
+    min-height: 5em;
+    max-height: 5em;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

@@ -1,0 +1,42 @@
+.tab-pane {
+  font-size: 0.95em;
+  font-weight: 700;
+
+  .radio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .radio-list-option {
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden;
+
+      .radio-list-option-marker {
+        display: none;
+      }
+
+      .radio-list-option-text {
+        padding: 0.5em 1em;
+        background-color: #e8e8e8;
+        transition: 0.15s linear;
+      }
+
+      &.selected {
+        .radio-list-option-text {
+          background-color: var(--main);
+          color: white;
+        }
+      }
+
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}
